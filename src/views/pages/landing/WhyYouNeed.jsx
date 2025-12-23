@@ -1,11 +1,31 @@
+// import BlueLockSVG from 'icons/blue-lock.svg'
+// import CubeSVG from 'icons/cube.svg'
+// import SearchNormalSVG from 'icons/search-normal.svg'
+// import WaterfallSVG from 'icons/waterfall.svg'
+// import PlayIcon from 'icons/play.svg'
+// import PauseIcon from 'icons/pause.svg'
+// import { useState, useRef, useEffect } from 'react'
+// import ReactPlayer from 'react-player'
+// import {
+//   MediaController,
+//   MediaControlBar,
+//   MediaTimeRange,
+//   MediaTimeDisplay,
+//   MediaVolumeRange,
+//   MediaPlaybackRateButton,
+//   MediaMuteButton,
+//   MediaFullscreenButton,
+// } from 'media-chrome/react'
+
+import { lazy, Suspense, useState, useRef, useEffect } from 'react'
+
 import BlueLockSVG from 'icons/blue-lock.svg'
 import CubeSVG from 'icons/cube.svg'
 import SearchNormalSVG from 'icons/search-normal.svg'
 import WaterfallSVG from 'icons/waterfall.svg'
 import PlayIcon from 'icons/play.svg'
 import PauseIcon from 'icons/pause.svg'
-import { useState, useRef, useEffect } from 'react'
-import ReactPlayer from 'react-player'
+
 import {
   MediaController,
   MediaControlBar,
@@ -17,7 +37,11 @@ import {
   MediaFullscreenButton,
 } from 'media-chrome/react'
 
-export default function WhyYouNeed () {
+const ReactPlayer = lazy(() => import('react-player'))
+
+
+
+export default function WhyYouNeed() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
   const hideTimeoutRef = useRef(null)
@@ -54,11 +78,11 @@ export default function WhyYouNeed () {
 
   return (
     <div className="why-you-need-wrapper">
-      <div className="container">      
+      <div className="container">
         <div className='col-sm-12 text-center gap-2 d-flex flex-column justify-content-center align-items-center why-you-need-header mb-4'>
           <span className='why-slogan'>Problem</span>
-          <h1 className='display-5 fw-bold'>The Benchmarking Dilemma</h1>        
-        </div>  
+          <h1 className='display-5 fw-bold'>The Benchmarking Dilemma</h1>
+        </div>
         <div className='col-sm-12 text-center gap-2 d-flex flex-column justify-content-center align-items-center why-you-need-content'>
           <div className="row text-center">
             <div className="col-sm-3 border-end  d-flex flex-column justify-content-center align-items-center">
@@ -71,20 +95,20 @@ export default function WhyYouNeed () {
             <div className="col-sm-3 border-end  d-flex flex-column justify-content-center align-items-center">
               <div className='icon-wrap mb-3'>
                 <SearchNormalSVG />
-              </div>              
+              </div>
               <h6 className='fw-bold'>Limited transparency</h6>
               <p className='opacity-75'>Investors struggle to assess real returns in private equity and VC.</p>
             </div>
             <div className="col-sm-3 border-end  d-flex flex-column justify-content-center align-items-center">
               <div className='icon-wrap mb-3'>
                 <CubeSVG />
-              </div>              
+              </div>
               <h6 className='fw-bold'>Misleading performance claims</h6>
               <p className='opacity-75'>Non-standardized methods let many funds claim “top quartile” status.</p>
             </div>
             <div className="col-sm-3 d-flex flex-column justify-content-center align-items-center">
               <div className='icon-wrap mb-3'>
-                <BlueLockSVG /> 
+                <BlueLockSVG />
               </div>
               <h6 className='fw-bold'>Difficulty comparing strategies</h6>
               <p className='opacity-75'>Differences in methodology can distort performance and risk profiles.</p>
@@ -95,27 +119,29 @@ export default function WhyYouNeed () {
           {/* <ReactPlayer src='/video/addvertisment-alt.mp4' className="mb-4 w-100 rounded-3"/> */}
 
           <MediaController
-            style={ {
+            style={{
               width: '100%',
               aspectRatio: '16/9',
               position: 'relative',
-            } }
-            onMouseEnter={ handleMouseEnter }
-            onMouseLeave={ handleMouseLeave }
+            }}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            <ReactPlayer
-              slot="media"
-              src="https://www.youtube.com/watch?v=o4u70nPdu84"
-              controls={ false }
-              playing={ isPlaying }
-              onPlay={ () => setIsPlaying(true) }
-              onPause={ () => setIsPlaying(false) }
-              style={ {
-                width: '100%',
-                height: '100%',
-                '--controls': 'none',
-              } }
-            ></ReactPlayer>
+            <Suspense fallback={<div style={{ aspectRatio: '16/9' }} />}>
+              <ReactPlayer
+                slot="media"
+                src="https://www.youtube.com/watch?v=o4u70nPdu84"
+                controls={false}
+                playing={isPlaying}
+                onPlay={() => setIsPlaying(true)}
+                onPause={() => setIsPlaying(false)}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  '--controls': 'none',
+                }}
+              ></ReactPlayer>
+            </Suspense>
             <MediaControlBar>
               <MediaTimeRange />
               <MediaTimeDisplay showDuration />
@@ -124,7 +150,7 @@ export default function WhyYouNeed () {
               <MediaPlaybackRateButton />
               <MediaFullscreenButton />
             </MediaControlBar>
-            <button onClick={ () => setIsPlaying(!isPlaying) } className="position-absolute top-50 start-50 translate-middle btn rounded-circle d-flex align-items-center justify-content-center" style={ { width: '160px', height: '160px', border: 'none', display: isHovered ? 'flex' : 'none' } }>
+            <button onClick={() => setIsPlaying(!isPlaying)} className="position-absolute top-50 start-50 translate-middle btn rounded-circle d-flex align-items-center justify-content-center" style={{ width: '160px', height: '160px', border: 'none', display: isHovered ? 'flex' : 'none' }}>
               {isPlaying ? (
                 <PauseIcon />
               ) : (
