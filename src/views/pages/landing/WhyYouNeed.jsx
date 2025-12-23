@@ -1,10 +1,10 @@
-// import BlueLockSVG from 'icons/blue-lock.svg'
-// import CubeSVG from 'icons/cube.svg'
-// import SearchNormalSVG from 'icons/search-normal.svg'
-// import WaterfallSVG from 'icons/waterfall.svg'
+import BlueLockSVG from 'icons/blue-lock.svg'
+import CubeSVG from 'icons/cube.svg'
+import SearchNormalSVG from 'icons/search-normal.svg'
+import WaterfallSVG from 'icons/waterfall.svg'
 // import PlayIcon from 'icons/play.svg'
 // import PauseIcon from 'icons/pause.svg'
-// import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 // import ReactPlayer from 'react-player'
 // import {
 //   MediaController,
@@ -16,30 +16,6 @@
 //   MediaMuteButton,
 //   MediaFullscreenButton,
 // } from 'media-chrome/react'
-
-import { lazy, Suspense, useState, useRef, useEffect } from 'react'
-
-import BlueLockSVG from 'icons/blue-lock.svg'
-import CubeSVG from 'icons/cube.svg'
-import SearchNormalSVG from 'icons/search-normal.svg'
-import WaterfallSVG from 'icons/waterfall.svg'
-import PlayIcon from 'icons/play.svg'
-import PauseIcon from 'icons/pause.svg'
-
-import {
-  MediaController,
-  MediaControlBar,
-  MediaTimeRange,
-  MediaTimeDisplay,
-  MediaVolumeRange,
-  MediaPlaybackRateButton,
-  MediaMuteButton,
-  MediaFullscreenButton,
-} from 'media-chrome/react'
-
-const ReactPlayer = lazy(() => import('react-player'))
-
-
 
 export default function WhyYouNeed() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -118,7 +94,7 @@ export default function WhyYouNeed() {
         <div className="col-sm-12 text-center gap-2 d-flex flex-column justify-content-center align-items-center why-you-need-footer px-0 px-md-3 rounded-3 overflow-hidden mt-4 position-relative">
           {/* <ReactPlayer src='/video/addvertisment-alt.mp4' className="mb-4 w-100 rounded-3"/> */}
 
-          <MediaController
+          {/* <MediaController
             style={{
               width: '100%',
               aspectRatio: '16/9',
@@ -127,21 +103,19 @@ export default function WhyYouNeed() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Suspense fallback={<div style={{ aspectRatio: '16/9' }} />}>
-              <ReactPlayer
-                slot="media"
-                src="https://www.youtube.com/watch?v=o4u70nPdu84"
-                controls={false}
-                playing={isPlaying}
-                onPlay={() => setIsPlaying(true)}
-                onPause={() => setIsPlaying(false)}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  '--controls': 'none',
-                }}
-              ></ReactPlayer>
-            </Suspense>
+            <ReactPlayer
+              slot="media"
+              src="https://www.youtube.com/watch?v=o4u70nPdu84"
+              controls={false}
+              playing={isPlaying}
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+              style={{
+                width: '100%',
+                height: '100%',
+                '--controls': 'none',
+              }}
+            ></ReactPlayer>
             <MediaControlBar>
               <MediaTimeRange />
               <MediaTimeDisplay showDuration />
@@ -157,7 +131,7 @@ export default function WhyYouNeed() {
                 <PlayIcon />
               )}
             </button>
-          </MediaController>
+          </MediaController> */}
         </div>
       </div>
     </div>
