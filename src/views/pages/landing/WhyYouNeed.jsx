@@ -2,20 +2,20 @@ import BlueLockSVG from 'icons/blue-lock.svg'
 import CubeSVG from 'icons/cube.svg'
 import SearchNormalSVG from 'icons/search-normal.svg'
 import WaterfallSVG from 'icons/waterfall.svg'
-// import PlayIcon from 'icons/play.svg'
-// import PauseIcon from 'icons/pause.svg'
+import PlayIcon from 'icons/play.svg'
+import PauseIcon from 'icons/pause.svg'
 import { useState, useRef, useEffect } from 'react'
-// import ReactPlayer from 'react-player'
-// import {
-//   MediaController,
-//   MediaControlBar,
-//   MediaTimeRange,
-//   MediaTimeDisplay,
-//   MediaVolumeRange,
-//   MediaPlaybackRateButton,
-//   MediaMuteButton,
-//   MediaFullscreenButton,
-// } from 'media-chrome/react'
+import ReactPlayer from 'react-player'
+import {
+  MediaController,
+  MediaControlBar,
+  MediaTimeRange,
+  MediaTimeDisplay,
+  MediaVolumeRange,
+  MediaPlaybackRateButton,
+  MediaMuteButton,
+  MediaFullscreenButton,
+} from 'media-chrome/react'
 
 export default function WhyYouNeed() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -94,7 +94,7 @@ export default function WhyYouNeed() {
         <div className="col-sm-12 text-center gap-2 d-flex flex-column justify-content-center align-items-center why-you-need-footer px-0 px-md-3 rounded-3 overflow-hidden mt-4 position-relative">
           {/* <ReactPlayer src='/video/addvertisment-alt.mp4' className="mb-4 w-100 rounded-3"/> */}
 
-          {/* <MediaController
+          <MediaController
             style={{
               width: '100%',
               aspectRatio: '16/9',
@@ -131,7 +131,7 @@ export default function WhyYouNeed() {
                 <PlayIcon />
               )}
             </button>
-          </MediaController> */}
+          </MediaController>
         </div>
       </div>
     </div>
