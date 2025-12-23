@@ -17,9 +17,9 @@ const PrevArrow = (props) => {
   return (
     <div className="arrow-container">
       <button
-        onClick={ onClick }
+        onClick={onClick}
         className="prev-arrow"
-        style={ {
+        style={{
           position: 'absolute',
           bottom: '-67px',
           left: '50%',
@@ -36,7 +36,7 @@ const PrevArrow = (props) => {
           justifyContent: 'center',
           cursor: 'pointer',
           fontSize: '18px',
-        } }
+        }}
       >
         <PrevIcon />
       </button>
@@ -49,9 +49,9 @@ const NextArrow = (props) => {
   return (
     <div className="arrow-container">
       <button
-        onClick={ onClick }
+        onClick={onClick}
         className="next-arrow"
-        style={ {
+        style={{
           position: 'absolute',
           bottom: '-67px',
           left: '50%',
@@ -68,7 +68,7 @@ const NextArrow = (props) => {
           justifyContent: 'center',
           cursor: 'pointer',
           fontSize: '18px',
-        } }
+        }}
       >
         <NextIcon />
       </button>
@@ -129,23 +129,23 @@ const Blog = () => {
           <a href="https://altindices.com/insights/" className="view-btn">View All</a>
         </div>
         <div className="container-fluid image-slider-container pe-0">
-          <Slider { ...settings }>
-            <div>            
+          <Slider {...settings}>
+            <div>
               <div className="each-blog">
                 <div className='blog-image'>
                   <figure>
-                    <img src={ blogImg } alt="Blog"/>
+                    <img src={blogImg} alt="Blog" loading="lazy" />
                   </figure>
                 </div>
                 <div className='blog-content'>
                   <div>
                     <h5>Fixing the Flaws: How Behavioral Biases and Outliers can skew Private Market Performance</h5>
-                    <p>Behavioral finance demonstrates how psychological biases, such as framing and contrast effects, influence financial decision-making and asset valuation.</p>                    
+                    <p>Behavioral finance demonstrates how psychological biases, such as framing and contrast effects, influence financial decision-making and asset valuation.</p>
                   </div>
                   <div className='blog-footer d-flex flex-column flex-md-row justify-content-between align-items-center'>
                     <div className='author-info d-flex flex-direction-row gap-3'>
-                      <div className='author-image'>   
-                        <img src={ authorImg } alt="Author"/>                     
+                      <div className='author-image'>
+                        <img src={authorImg} alt="Author" loading="lazy" />
                       </div>
                       <div className='author-name d-flex flex-column'>
                         <label className="fw-semibold">Paigaam Pegg Dhaliwal</label>
@@ -153,33 +153,33 @@ const Blog = () => {
                       </div>
                     </div>
                     <div className='read-more'>
-                      <a href="#" className="read-more-btn d-flex flex-row gap-3 text-white align-items-center">Read More <img src={ arrowRightUp } alt="Why Alt?"/></a>
+                      <a href="#" className="read-more-btn d-flex flex-row gap-3 text-white align-items-center">Read More <img src={arrowRightUp} alt="Why Alt?" loading="lazy" /></a>
                     </div>
                   </div>
                 </div>
-              </div>              
+              </div>
             </div>
-            <div>            
+            <div>
               <div className="each-blog">
                 <div className='blog-image'>
                   <figure>
-                    <img src={ blogImg1 } alt="Blog"/>
+                    <img src={blogImg1} alt="Blog" loading="lazy" />
                   </figure>
                 </div>
                 <div className='blog-content'>
                   <div>
                     <h5>Wrapping Up 2024: Highlights from Our AI in Finance Series!</h5>
-                    <p>As we close an exhilarating 2024, I&#39;m thrilled to showcase our enlightening LinkedIn series on AI in Finance, inspired by the latest insights from the 10th Annual Bloomberg Columbia Machine Learning in Finance Conference. </p>                    
+                    <p>As we close an exhilarating 2024, I&#39;m thrilled to showcase our enlightening LinkedIn series on AI in Finance, inspired by the latest insights from the 10th Annual Bloomberg Columbia Machine Learning in Finance Conference. </p>
                   </div>
                   <div className='blog-footer d-flex flex-column flex-md-row justify-content-between align-items-center'>
-                    <div className='author-info d-flex flex-direction-row gap-3'>                     
+                    <div className='author-info d-flex flex-direction-row gap-3'>
                     </div>
                     <div className='read-more'>
-                      <a href="#" className="read-more-btn align-items-center d-flex flex-row gap-3 text-white">Read More <img src={ arrowRightUp } alt="Why Alt?"/></a>
+                      <a href="#" className="read-more-btn align-items-center d-flex flex-row gap-3 text-white">Read More <img src={arrowRightUp} alt="Why Alt?" loading="lazy" /></a>
                     </div>
                   </div>
                 </div>
-              </div>              
+              </div>
             </div>
           </Slider>
         </div>

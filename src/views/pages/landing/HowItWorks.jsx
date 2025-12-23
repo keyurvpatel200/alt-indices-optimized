@@ -2,7 +2,7 @@ import mouse from '../../../assets/landing/mouse.svg'
 import CraftSVG from 'icons/Craft.svg'
 import ShareSVG from 'icons/Share.svg'
 
-export default function HowItWorks () {
+export default function HowItWorks() {
   return (
     <div className="how-it-works-wrapper">
       <div className="container">
@@ -15,7 +15,7 @@ export default function HowItWorks () {
             <ul>
               <li>
                 <div className="icons-box">
-                  <img src={ mouse } alt="company"/>
+                  <img src={mouse} alt="company" loading="lazy" />
                 </div>
                 <div className="text-area">
                   <h3>Enroll & Signup</h3>
@@ -24,7 +24,7 @@ export default function HowItWorks () {
               </li>
               <li>
                 <div className="icons-box green">
-                  <CraftSVG/>
+                  <CraftSVG />
                 </div>
                 <div className="text-area">
                   <h3>Craft Your Narrative</h3>
@@ -33,7 +33,7 @@ export default function HowItWorks () {
               </li>
               <li>
                 <div className="icons-box blue">
-                  <ShareSVG/>
+                  <ShareSVG />
                 </div>
                 <div className="text-area">
                   <h3>Share Your Story</h3>

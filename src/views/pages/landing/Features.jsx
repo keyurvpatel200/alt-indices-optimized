@@ -3,7 +3,7 @@ import { Modal, ModalBody, ModalHeader } from 'reactstrap'
 
 import arrowRightUp from '../../../assets/landing/arrow-up-right.svg'
 
-export default function Features () {
+export default function Features() {
   const [modal, setModal] = useState(false)
   const toggle = () => setModal(!modal)
 
@@ -33,11 +33,11 @@ export default function Features () {
             <li><strong>Aligned to your goals:</strong> tuned for fundraising, manager monitoring, or IC memos, the benchmark is tuned to your objective.</li>
           </ul>
           <p>Alt Indices eliminates these concerns, ensuring your benchmarks align
-with your investment goals. Choose customized benchmarks for a
-strategic edge in your investment journey!</p>
+            with your investment goals. Choose customized benchmarks for a
+            strategic edge in your investment journey!</p>
           <div className="ft-section">
-            <label>Tailored Benchmarking <br/>Solutions</label>
-            <a href="#why" onClick={ toggle }><img src={ arrowRightUp } alt="Why Alt?"/></a>
+            <label>Tailored Benchmarking <br />Solutions</label>
+            <a href="#why" onClick={toggle}><img src={arrowRightUp} alt="Why Alt?" loading="lazy" /></a>
           </div>
         </div>
         <div className="right-f-bar">
@@ -45,15 +45,15 @@ strategic edge in your investment journey!</p>
             <div className="top-box">
               <p>Built for quick onboarding and everyday decisions, so GPs and LPs get instant clarity instead of setup overhead.</p>
               <div className="ft-section">
-                <label>Aptly<br/>Aligned</label>
-                <a href="#why" onClick={ aptlyToggle }><img src={ arrowRightUp } alt="Why Alt?"/></a>
+                <label>Aptly<br />Aligned</label>
+                <a href="#why" onClick={aptlyToggle}><img src={arrowRightUp} alt="Why Alt?" loading="lazy" /></a>
               </div>
             </div>
             <div className="bottom-box">
               <p>We show the shape and spread of results; so coverage, dispersion, and outliers are obvious, and no single number dominates the story.</p>
               <div className="ft-section">
-                <label>Comprehensive<br/>Insights</label>
-                <a href="#why" onClick={ altToggle }><img src={ arrowRightUp } alt="Why Alt?"/></a>
+                <label>Comprehensive<br />Insights</label>
+                <a href="#why" onClick={altToggle}><img src={arrowRightUp} alt="Why Alt?" loading="lazy" /></a>
               </div>
             </div>
           </div>
@@ -61,15 +61,15 @@ strategic edge in your investment journey!</p>
             <p>De-identified peers and <strong>aligned</strong> platform that keeps trust high and compliance simple; aligning incentives and removing bias from private-market performance reporting..</p>
             <div className="ft-section">
               <label>Transparent Performance Metrics </label>
-              <a href="#why" onClick={ transparentToggle }><img src={ arrowRightUp } alt="Why Alt?"/></a>
+              <a href="#why" onClick={transparentToggle}><img src={arrowRightUp} alt="Why Alt?" loading="lazy" /></a>
             </div>
           </div>
         </div>
       </div>
 
-      { /* Left Modal */ }
-      <Modal isOpen={ modal } toggle={ toggle } centered>
-        <ModalHeader toggle={ toggle }>Tailored Benchmarking Solutions</ModalHeader>
+      { /* Left Modal */}
+      <Modal isOpen={modal} toggle={toggle} centered>
+        <ModalHeader toggle={toggle}>Tailored Benchmarking Solutions</ModalHeader>
         <ModalBody>
           <div className="iframe-wrapper">
             <iframe className="iframe-container"
@@ -82,13 +82,13 @@ strategic edge in your investment journey!</p>
           <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFNfjhaI-8&#x2F;Ocv09SuSWvHBwF53BAHJGQ&#x2F;view?utm_content=DAFNfjhaI-8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
             target="_blank"
             rel="noreferrer">Website Whats Wrong?</a> by Paigaam Dhaliwal
-          <br/> <br/>
+          <br /> <br />
         </ModalBody>
       </Modal>
 
-      { /* right Modal */ }
-      <Modal isOpen={ altModal } toggle={ altToggle } centered>
-        <ModalHeader altToggle={ altToggle }>Comprehensive Insights</ModalHeader>
+      { /* right Modal */}
+      <Modal isOpen={altModal} toggle={altToggle} centered>
+        <ModalHeader altToggle={altToggle}>Comprehensive Insights</ModalHeader>
         <ModalBody>
           <div className="iframe-wrapper">
             <iframe loading="lazy"
@@ -101,13 +101,13 @@ strategic edge in your investment journey!</p>
           <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF-sT8zVAY&#x2F;NsxxckZuMAMON2atZNiFuA&#x2F;view?utm_content=DAF-sT8zVAY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
             target="_blank"
             rel="noreferrer">Website - Comprehensive Insights</a> by Paigaam dhaliwal
-          <br/> <br/>
+          <br /> <br />
         </ModalBody>
       </Modal>
 
-      { /* right Modal */ }
-      <Modal isOpen={ aptlyModal } toggle={ aptlyToggle } centered>
-        <ModalHeader aptlyToggle={ aptlyToggle }>Aptly Aligned</ModalHeader>
+      { /* right Modal */}
+      <Modal isOpen={aptlyModal} toggle={aptlyToggle} centered>
+        <ModalHeader aptlyToggle={aptlyToggle}>Aptly Aligned</ModalHeader>
         <ModalBody>
           <div className="iframe-wrapper">
             <iframe loading="lazy"
@@ -120,14 +120,14 @@ strategic edge in your investment journey!</p>
           <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF-saOfNlU&#x2F;67TXHOcC7duik6IlndYBfw&#x2F;view?utm_content=DAF-saOfNlU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
             target="_blank"
             rel="noreferrer">Website - Aptly Aligned</a> by Paigaam Dhaliwal
-          <br/> <br/>
+          <br /> <br />
 
         </ModalBody>
       </Modal>
 
-      { /* right Modal */ }
-      <Modal isOpen={ transparentModal } toggle={ transparentToggle } centered>
-        <ModalHeader transparentToggle={ transparentToggle }>Transparent Performance Metrics
+      { /* right Modal */}
+      <Modal isOpen={transparentModal} toggle={transparentToggle} centered>
+        <ModalHeader transparentToggle={transparentToggle}>Transparent Performance Metrics
         </ModalHeader>
         <ModalBody>
           <div className="iframe-wrapper">
@@ -141,7 +141,7 @@ strategic edge in your investment journey!</p>
           <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF-sezMliM&#x2F;DqKzFF6nKh1swfGz3ZqmDA&#x2F;view?utm_content=DAF-sezMliM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
             target="_blank"
             rel="noreferrer">Website - Transparent Performance Metrics</a> by Paigaam dhaliwal
-          <br/> <br/>
+          <br /> <br />
 
         </ModalBody>
       </Modal>

@@ -3,7 +3,7 @@ import { Modal, ModalBody, ModalHeader } from 'reactstrap'
 
 import AboutImg from '../../../assets/landing/group-img.svg'
 
-export default function StartUp () {
+export default function StartUp() {
   const [modal, setModal] = useState(false)
   const toggle = () => setModal(!modal)
 
@@ -11,7 +11,7 @@ export default function StartUp () {
     <div className="startup-wrapper" id="startup">
       <div className="container">
         <div className="cover-img">
-          <img src={ AboutImg } alt="company"/>
+          <img src={AboutImg} alt="company" loading="lazy" />
         </div>
         <div className="about-contain">
           <h3>Roadmap for Navigating Transperancy</h3>
@@ -39,12 +39,12 @@ export default function StartUp () {
               comparability</b> in performance reporting.
             </li>
           </ul>
-          <button className="read-btn" onClick={ toggle }>Read our Whitepaper</button>
+          <button className="read-btn" onClick={toggle}>Read our Whitepaper</button>
         </div>
       </div>
 
-      <Modal isOpen={ modal } toggle={ toggle } centered>
-        <ModalHeader toggle={ toggle }></ModalHeader>
+      <Modal isOpen={modal} toggle={toggle} centered>
+        <ModalHeader toggle={toggle}></ModalHeader>
         <ModalBody>
           <div className="iframe-wrapper">
             <iframe loading="lazy"
@@ -58,7 +58,7 @@ export default function StartUp () {
           <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF-sR_0Zw&#x2F;IajdCLrl0xHN4ToYHYBFEg&#x2F;view?utm_content=DAF-sR_0Zw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
             target="_blank"
             rel="noreferrer">Website - Whitepaper</a> by Paigaam dhaliwal
-          <br/> <br/>
+          <br /> <br />
         </ModalBody>
       </Modal>
     </div>
