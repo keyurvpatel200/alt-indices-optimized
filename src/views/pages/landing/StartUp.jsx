@@ -1,15 +1,15 @@
 import { useState } from 'react'
-// import { Modal, ModalBody, ModalHeader } from 'reactstrap'
+import { Modal, ModalBody, ModalHeader } from 'reactstrap'
 
-// import AboutImg from '../../../assets/landing/group-img.svg'
+import AboutImg from '../../../assets/landing/group-img.svg'
 
 export default function StartUp() {
-  // const [modal, setModal] = useState(false)
-  // const toggle = () => setModal(!modal)
+  const [modal, setModal] = useState(false)
+  const toggle = () => setModal(!modal)
 
   return (
     <div className="startup-wrapper" id="startup">
-      {/* <div className="container">
+      <div className="container">
         <div className="cover-img">
           <img src={AboutImg} alt="company" loading="lazy" />
         </div>
@@ -60,7 +60,7 @@ export default function StartUp() {
             rel="noreferrer">Website - Whitepaper</a> by Paigaam dhaliwal
           <br /> <br />
         </ModalBody>
-      </Modal> */}
+      </Modal>
     </div>
   )
 }
