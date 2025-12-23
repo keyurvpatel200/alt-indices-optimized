@@ -1,0 +1,35 @@
+[
+  {
+    "date": "2024-12-11 09:30 AM",
+    "event": "Reconstitution Events",
+    "details": "Created a new Balanced benchmark for Fund A to provide a balanced mix of speed and accuracy in investment performance.",
+    "approvedBy": {
+      "name": "TNS",
+      "company": "TechNova Solutions",
+      "email": "technova@technova.com",
+      "image": "../../assets/images/image.png"
+    }
+  },
+  {
+    "date": "2024-12-15 10:00 AM",
+    "event": "Portfolio Adjustment",
+    "details": "Adjusted asset allocation to improve overall fund performance and reduce risk exposure.",
+    "approvedBy": {
+      "name": "JDR",
+      "company": "Investment Experts Ltd.",
+      "email": "contact@investexp.com",
+      "image": ""
+    }
+  },
+  {
+    "date": "2025-01-05 11:45 AM",
+    "event": "New Strategy Implementation",
+    "details": "Implemented an AI-driven investment strategy to optimize real-time decision-making for Fund B.",
+    "approvedBy": {
+      "name": "LMC",
+      "company": "Market Leaders Corp.",
+      "email": "info@marketleaders.com",
+      "image": "../../assets/images/image.png"
+    }
+  }
+]

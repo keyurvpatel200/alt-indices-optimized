@@ -1,0 +1,4 @@
+[
+  { "id": 1, "name": "Benchmark 1", "type": "Equity", "tags": ["Tag1", "Tag2"], "fundSelected": "Fund 1", "fundCount": 5, "dateCreated": "2023-01-01" },
+  { "id": 2, "name": "Benchmark 2", "type": "Balanced", "tags": ["Tag3"], "fundSelected": "Fund 2", "fundCount": 3, "dateCreated": "2023-02-01" }
+]

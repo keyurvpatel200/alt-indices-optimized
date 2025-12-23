@@ -1,0 +1,70 @@
+.wrapper {
+  --color-white: #fff;
+  --color-primary-50: #f2f7fd;
+  --color-primary-100: #e4edfa;
+  --color-primary-200: #c3daf4;
+  --color-primary-300: #8fbcea;
+  --color-primary-400: #5399dd;
+  --color-primary-500: #2c7ccb;
+  --color-primary-600: #1d60ac;
+  --color-primary-700: #194d8b;
+  --color-primary-800: #184374;
+  --color-primary-900: #163153;
+  --color-primary-950: #112440;
+
+  --color-text: var(--color-white);
+  --color-bg: var(--color-primary-900);
+  --color-slice: var(--color-primary-100);
+  --color-area: var(--color-primary-300);
+
+  --font-size-axis-tick: 14px;
+  --font-size-axis-title: 14px;
+  --font-size-label: 18px;
+
+  color: var(--color-area);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.svg text {
+  fill: var(--color-text);
+}
+
+.area {
+  stroke-width: 2px;
+}
+
+.xAxis {
+  font-size: var(--font-size-axis-tick);
+}
+
+.xAxis line {
+  stroke: var(--color-bg);
+  stroke-width: 4px;
+}
+
+.axisTitle {
+  font-size: var(--font-size-axis-title);
+}
+
+.slices {
+  font-size: var(--font-size-label);
+}
+
+.slice rect {
+  fill: var(--color-slice);
+  fill-opacity: 0.1;
+}
+
+.slice {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.slice.selected {
+  opacity: 1;
+}

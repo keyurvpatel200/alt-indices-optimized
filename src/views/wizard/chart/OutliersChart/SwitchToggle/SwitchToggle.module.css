@@ -1,0 +1,13 @@
+.wrapper {
+    margin-inline-start: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #8fbcea;
+    width: fit-content;
+  }
+  
+  .wrapper label {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  

@@ -1,0 +1,94 @@
+.wrapper {
+  --color-primary-100: #c5dfff;
+  --color-primary-200: #a6c8ee;
+  --color-primary-300: #8db1d9;
+  --color-primary-400: #769ac3;
+  --color-primary-500: #6183ac;
+  --color-primary-600: #4d6d95;
+  --color-primary-700: #3a587f;
+  --color-primary-800: #284368;
+  --color-primary-900: #163052;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-text: var(--color-primary-900);
+  --color-bg: var(--color-white);
+  --color-slice: var(--color-primary-300);
+  --color-area: var(--color-primary-500);
+  --color-gradient: var(--color-primary-500);
+
+  --font-size-axis-tick: 14px;
+  --font-size-axis-title: 14px;
+  --font-size-label: 18px;
+}
+
+.wrapper[data-theme="dark"] {
+  --color-text: var(--color-white);
+  --color-bg: var(--color-primary-900);
+  --color-slice: var(--color-primary-100);
+  --color-area: var(--color-primary-300);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.svg text {
+  fill: var(--color-text);
+}
+
+.gradient stop {
+  stop-color: var(--color-gradient);
+}
+
+.area {
+  stroke-width: 2px;
+}
+
+.areaLine {
+  stroke: var(--color-area);
+}
+
+.xAxis {
+  font-size: var(--font-size-axis-tick);
+}
+
+.xAxis line {
+  stroke: var(--color-bg);
+  stroke-width: 4px;
+}
+
+.axisTitle {
+  font-size: var(--font-size-axis-title);
+}
+
+.slices {
+  font-size: var(--font-size-label);
+}
+
+.slice rect {
+  fill: var(--color-slice);
+  fill-opacity: 0.1;
+}
+
+.slice {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.slice.selected {
+  opacity: 1;
+}

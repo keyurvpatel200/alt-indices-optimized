@@ -1,0 +1,109 @@
+.wrapper {
+  --color-white: #fff;
+  --color-primary-light: #c5dfff;
+  --color-primary-medium: #89bbec;
+  --color-primary-dark: #163052;
+  --color-secondary-light: #ffcdc5;
+  --color-secondary-medium: #ec9589;
+  --color-secondary-dark: #521f16;
+  --color-tertiary-light: #ffeac5;
+  --color-tertiary-medium: #ecc689;
+  --color-tertiary-dark: #523d16;
+
+  --color-text: var(--color-white);
+  --color-tick: var(--color-primary-light);
+  --color-bubble: var(--color-primary-medium);
+  --color-outlier: var(--color-secondary-medium);
+  --color-ghost: var(--color-white);
+  --color-contour-lowest-level: var(--color-tertiary-dark);
+  --color-contour-highest-level: var(--color-tertiary-medium);
+  --color-tooltip-bg: var(--color-primary-dark);
+  --color-tooltip-border: var(--color-primary-light);
+
+  --font-size-axis-tick: 14px;
+  --font-size-axis-title: 14px;
+  --font-size-tooltip: 14px;
+
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  font-size: var(--font-size-tooltip);
+  color: var(--color-text);
+  background-color: var(--color-tooltip-bg);
+  border: 1px solid var(--color-tooltip-border);
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  z-index: 1;
+}
+
+.tooltip dl,
+.tooltip dt,
+.tooltip dd {
+  margin: 0;
+}
+
+.tooltip dt,
+.tooltip dd {
+  display: inline;
+}
+
+.tooltip dt {
+  opacity: 0.75;
+}
+
+.tooltip dt::after {
+  content: ": ";
+}
+
+.svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.svg text {
+  fill: var(--color-text);
+}
+
+.axis {
+  font-size: var(--font-size-axis-tick);
+}
+
+.axis line {
+  stroke: var(--color-tick);
+  stroke-opacity: 0.25;
+}
+
+.axis line.isZero {
+  stroke-opacity: 0.5;
+}
+
+.axisTitle {
+  font-size: var(--font-size-axis-title);
+}
+
+.bubble {
+  fill: var(--color-bubble);
+  fill-opacity: 0.4;
+}
+
+.bubble.isOutlier {
+  fill: var(--color-outlier);
+  fill-opacity: 0.8;
+}
+
+.bubble.isGhost {
+  pointer-events: none;
+  fill: none;
+  stroke: var(--color-ghost);
+}
+
+.contour {
+  pointer-events: none;
+  stroke-opacity: 0.4;
+  fill-opacity: 0.05;
+  stroke-linejoin: round;
+}

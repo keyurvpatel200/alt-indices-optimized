@@ -1,0 +1,240 @@
+.wrapper {
+  --color-primary-100: #c5dfff;
+  --color-primary-200: #a6c8ee;
+  --color-primary-300: #8db1d9;
+  --color-primary-400: #769ac3;
+  --color-primary-500: #6183ac;
+  --color-primary-600: #4d6d95;
+  --color-primary-700: #3a587f;
+  --color-primary-800: #284368;
+  --color-primary-900: #163052;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+  --color-accent: #eb6e46;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-bg: var(--color-white);
+  --color-text: var(--color-neutral-900);
+  --color-border: var(--color-text);
+  --color-tick: var(--color-text);
+
+  --color-quartile-bg: var(--color-neutral-50);
+  --color-quartile-label-bg: var(--color-white);
+  --color-quartile-metric: var(--color-white);
+  --color-quartile-metric-bg: var(--color-text);
+  --color-quartile-arc: var(--color-neutral-200);
+  --color-quartile-arc-active: var(--color-accent);
+  --color-quartile-value: var(--color-white);
+  --color-quartile-value-bg: var(--color-accent);
+
+  --color-box: var(--color-text);
+  --color-box-dot-fill: var(--color-primary-300);
+  --color-box-dot-stroke: var(--color-primary-500);
+  --opacity-box-dot: 0.75;
+  --color-box-selected-dot-fill: var(--color-accent);
+  --color-box-selected-dot-hover-stroke: currentColor;
+  --color-box-selected-dot-check: var(--color-white);
+
+  --color-kde-gradient-start: var(--color-primary-300);
+  --color-kde-gradient-end: var(--color-white);
+  --color-kde-stroke: var(--color-primary-500);
+
+  --color-tooltip-bg: var(--color-white);
+  --color-tooltip-border: var(--color-border);
+
+  --opacity-border-tick: 0.25;
+
+  --font-size-quartile-label: 12px;
+  --font-weight-quartile-label: 500;
+  --font-size-quartile-metric: 16px;
+  --font-weight-quartile-metric: 800;
+  --font-size-quartile-value: 12px;
+  --font-weight-quartile-value: 800;
+  --font-size-axis-tick: 12px;
+  --font-size-box-label: 12px;
+  --font-weight-box-label: 600;
+  --font-size-tooltip: 14px;
+
+  color: var(--color-text);
+  position: relative;
+}
+
+.wrapper[data-theme='dark'] {
+  --color-border: var(--color-primary-100);
+  --color-tick: var(--color-primary-100);
+  --color-text: var(--color-white);
+  --color-bg: var(--color-primary-900);
+  --color-box-dot-fill: var(--color-primary-500);
+  --color-box-dot-stroke: var(--color-primary-300);
+  --color-kde-gradient-start: var(--color-primary-500);
+  --color-kde-gradient-end: var(--color-primary-900);
+  --color-kde-stroke: var(--color-primary-300);
+  --color-quartile-bg: var(--color-primary-800);
+  --color-quartile-label-bg: var(--color-primary-900);
+  --color-quartile-metric-bg: var(--color-neutral-900);
+  --color-tooltip-bg: var(--color-primary-900);
+  --color-tooltip-border: var(--color-primary-100);
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  font-size: var(--font-size-tooltip);
+  color: var(--color-text);
+  background-color: var(--color-tooltip-bg);
+  border: 1px solid var(--color-tooltip-border);
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  z-index: 1;
+}
+
+.tooltip dl,
+.tooltip dt,
+.tooltip dd {
+  margin: 0;
+}
+
+.tooltip dt,
+.tooltip dd {
+  display: inline;
+}
+
+.tooltip dt {
+  opacity: 0.75;
+}
+
+.tooltip dt::after {
+  content: ': ';
+}
+
+.svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.frame {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-opacity: var(--opacity-border-tick);
+}
+
+.quartileFrame {
+  fill: var(--color-quartile-bg);
+  stroke: var(--color-border);
+  stroke-opacity: var(--opacity-border-tick);
+}
+
+.quartileLabelFrame {
+  fill: var(--color-quartile-label-bg);
+  stroke: var(--color-border);
+  stroke-opacity: var(--opacity-border-tick);
+}
+
+.quartileLabel {
+  fill: currentColor;
+  font-size: var(--font-size-quartile-label);
+  font-weight: var(--font-weight-quartile-label);
+}
+
+.quartileMetricFrame {
+  fill: var(--color-quartile-metric-bg);
+}
+
+.quartileMetric {
+  fill: var(--color-quartile-metric);
+  font-size: var(--font-size-quartile-metric);
+  font-weight: var(--font-weight-quartile-metric);
+}
+
+.quartileArc {
+  --_color-fill: var(--color-quartile-arc);
+  fill: var(--_color-fill);
+}
+
+.quartileArc[data-active] {
+  --_color-fill: var(--color-quartile-arc-active);
+}
+
+.quartileValueFrame {
+  fill: var(--color-quartile-value-bg);
+}
+
+.quartileValue {
+  fill: var(--color-quartile-value);
+  font-size: var(--font-size-quartile-value);
+  font-weight: var(--font-weight-quartile-value);
+}
+
+.axis text {
+  fill: currentColor;
+  font-size: var(--font-size-axis-tick);
+}
+
+.axis line {
+  stroke: var(--color-tick);
+  stroke-opacity: var(--opacity-border-tick);
+}
+
+.box path {
+  fill: none;
+  stroke: var(--color-box);
+  stroke-width: 1.5;
+}
+
+.box .dots {
+  stroke: var(--color-box-dot-stroke);
+  fill: var(--color-box-dot-fill);
+}
+
+.box .dots circle {
+  opacity: var(--opacity-box-dot);
+}
+
+.box .selectedDot circle {
+  fill: var(--color-box-selected-dot-fill);
+}
+
+.box .selectedDot:hover circle {
+  stroke: var(--color-box-selected-dot-hover-stroke);
+}
+
+.box .selectedDot path {
+  fill: var(--color-box-selected-dot-check);
+  stroke: var(--color-box-selected-dot-check);
+}
+
+.box text {
+  fill: currentColor;
+  font-size: var(--font-size-box-label);
+  font-weight: var(--font-weight-box-label);
+  stroke: var(--color-bg);
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+.kde stop:first-child {
+  stop-color: var(--color-kde-gradient-start);
+}
+
+.kde stop:last-child {
+  stop-color: var(--color-kde-gradient-end);
+}
+
+.kde .kdeLine {
+  fill: none;
+  stroke: var(--color-kde-stroke);
+  stroke-width: 1.5;
+}

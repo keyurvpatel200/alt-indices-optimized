@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 8rem;
+    align-items: center;
+  }
+  
+  .wrapper > :first-child {
+    flex-basis: 20rem;
+    flex-grow: 1;
+  }
+  
+  .wrapper > :last-child {
+    flex-basis: 0;
+    flex-grow: 9999;
+    min-inline-size: 60%;
+  }
+  
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .stack > * + * {
+    margin-block-start: 2rem;
+  }
+  

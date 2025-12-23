@@ -1,0 +1,30 @@
+[{
+  "name": "Company Fundamentals",
+  "steps": [
+    "General Partner Information",
+    "Fund Information",
+    "Company Info",
+    "Financial Information",
+    "Sector & Industry",
+    "Workforce data"
+  ]
+}, {
+  "name": "GHG Emissions",
+  "steps": [
+    "Emissions by Methodology",
+    "Scope 3 Emission Categories",
+    "Summary"
+  ]
+}, {
+  "name": "Net Zero"
+}, {
+  "name": "Renewable Energy Consumption"
+}, {
+  "name": "Diversity"
+}, {
+  "name": "Work Related Injuries"
+}, {
+  "name": "Net New Hires"
+}, {
+  "name": "Employee Engagement"
+}]

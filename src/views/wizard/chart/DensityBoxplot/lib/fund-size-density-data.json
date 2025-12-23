@@ -1,0 +1,434 @@
+{
+  "fund_distribution": [
+    {
+      "category": "0_to_50",
+      "number_of_funds": 20,
+      "fund_percentage": 20.0,
+      "total_fund_size": 492.31,
+      "size_percentage": 0.49
+    },
+    {
+      "category": "50_to_250",
+      "number_of_funds": 51,
+      "fund_percentage": 51.0,
+      "total_fund_size": 6806.24,
+      "size_percentage": 6.83
+    },
+    {
+      "category": "250_to_1000",
+      "number_of_funds": 14,
+      "fund_percentage": 14.0,
+      "total_fund_size": 7381.91,
+      "size_percentage": 7.41
+    },
+    {
+      "category": "greater_than_1000",
+      "number_of_funds": 15,
+      "fund_percentage": 15.0,
+      "total_fund_size": 84904.22,
+      "size_percentage": 85.26
+    }
+  ],
+  "compared_fund": [
+    {
+      "fund_sizes_range": 4.23,
+      "kde_values": 0.0010693094905913107
+    },
+    {
+      "fund_sizes_range": 19.33878787878788,
+      "kde_values": 0.00109800076595682
+    },
+    {
+      "fund_sizes_range": 34.44757575757576,
+      "kde_values": 0.0011235852993512763
+    },
+    {
+      "fund_sizes_range": 49.55636363636364,
+      "kde_values": 0.0011458427336624283
+    },
+    {
+      "fund_sizes_range": 64.66515151515152,
+      "kde_values": 0.0011645868349208315
+    },
+    {
+      "fund_sizes_range": 79.7739393939394,
+      "kde_values": 0.0011796685613144674
+    },
+    {
+      "fund_sizes_range": 94.88272727272728,
+      "kde_values": 0.001190978453700229
+    },
+    {
+      "fund_sizes_range": 109.99151515151516,
+      "kde_values": 0.0011984482877622714
+    },
+    {
+      "fund_sizes_range": 125.10030303030304,
+      "kde_values": 0.0012020519470702983
+    },
+    {
+      "fund_sizes_range": 140.20909090909092,
+      "kde_values": 0.001201805496765713
+    },
+    {
+      "fund_sizes_range": 155.31787878787878,
+      "kde_values": 0.0011977664587725886
+    },
+    {
+      "fund_sizes_range": 170.42666666666665,
+      "kde_values": 0.0011900323105865725
+    },
+    {
+      "fund_sizes_range": 185.53545454545454,
+      "kde_values": 0.0011787382501300962
+    },
+    {
+      "fund_sizes_range": 200.64424242424244,
+      "kde_values": 0.0011640542881959299
+    },
+    {
+      "fund_sizes_range": 215.7530303030303,
+      "kde_values": 0.0011461817470068759
+    },
+    {
+      "fund_sizes_range": 230.86181818181817,
+      "kde_values": 0.0011253492578501727
+    },
+    {
+      "fund_sizes_range": 245.97060606060606,
+      "kde_values": 0.001101808362153881
+    },
+    {
+      "fund_sizes_range": 261.079393939394,
+      "kde_values": 0.0010758288284289789
+    },
+    {
+      "fund_sizes_range": 276.1881818181819,
+      "kde_values": 0.0010476938020025398
+    },
+    {
+      "fund_sizes_range": 291.2969696969697,
+      "kde_values": 0.001017694905345564
+    },
+    {
+      "fund_sizes_range": 306.4057575757576,
+      "kde_values": 0.0009861274041182216
+    },
+    {
+      "fund_sizes_range": 321.5145454545455,
+      "kde_values": 0.0009532855480077669
+    },
+    {
+      "fund_sizes_range": 336.62333333333333,
+      "kde_values": 0.0009194581863286669
+    },
+    {
+      "fund_sizes_range": 351.7321212121212,
+      "kde_values": 0.0008849247466002771
+    },
+    {
+      "fund_sizes_range": 366.8409090909091,
+      "kde_values": 0.0008499516504055848
+    },
+    {
+      "fund_sizes_range": 381.949696969697,
+      "kde_values": 0.0008147892253154865
+    },
+    {
+      "fund_sizes_range": 397.0584848484849,
+      "kde_values": 0.0007796691551228151
+    },
+    {
+      "fund_sizes_range": 412.16727272727275,
+      "kde_values": 0.0007448024936660209
+    },
+    {
+      "fund_sizes_range": 427.27606060606064,
+      "kde_values": 0.0007103782507190232
+    },
+    {
+      "fund_sizes_range": 442.38484848484853,
+      "kde_values": 0.0006765625423315688
+    },
+    {
+      "fund_sizes_range": 457.49363636363637,
+      "kde_values": 0.0006434982831197294
+    },
+    {
+      "fund_sizes_range": 472.60242424242426,
+      "kde_values": 0.0006113053847546324
+    },
+    {
+      "fund_sizes_range": 487.71121212121216,
+      "kde_values": 0.0005800814136217394
+    },
+    {
+      "fund_sizes_range": 502.82000000000005,
+      "kde_values": 0.0005499026515737882
+    },
+    {
+      "fund_sizes_range": 517.928787878788,
+      "kde_values": 0.0005208254970328652
+    },
+    {
+      "fund_sizes_range": 533.0375757575758,
+      "kde_values": 0.000492888139469723
+    },
+    {
+      "fund_sizes_range": 548.1463636363637,
+      "kde_values": 0.00046611243846795387
+    },
+    {
+      "fund_sizes_range": 563.2551515151515,
+      "kde_values": 0.0004405059390484137
+    },
+    {
+      "fund_sizes_range": 578.3639393939394,
+      "kde_values": 0.00041606395749210035
+    },
+    {
+      "fund_sizes_range": 593.4727272727273,
+      "kde_values": 0.00039277167630202294
+    },
+    {
+      "fund_sizes_range": 608.5815151515152,
+      "kde_values": 0.0003706061928830423
+    },
+    {
+      "fund_sizes_range": 623.6903030303031,
+      "kde_values": 0.0003495384736569003
+    },
+    {
+      "fund_sizes_range": 638.799090909091,
+      "kde_values": 0.0003295351733140528
+    },
+    {
+      "fund_sizes_range": 653.9078787878789,
+      "kde_values": 0.00031056028737821506
+    },
+    {
+      "fund_sizes_range": 669.0166666666667,
+      "kde_values": 0.00029257661487906955
+    },
+    {
+      "fund_sizes_range": 684.1254545454545,
+      "kde_values": 0.0002755470163725521
+    },
+    {
+      "fund_sizes_range": 699.2342424242424,
+      "kde_values": 0.00025943546053023225
+    },
+    {
+      "fund_sizes_range": 714.3430303030303,
+      "kde_values": 0.00024420785979607627
+    },
+    {
+      "fund_sizes_range": 729.4518181818182,
+      "kde_values": 0.00022983270198581588
+    },
+    {
+      "fund_sizes_range": 744.5606060606061,
+      "kde_values": 0.0002162814900392289
+    },
+    {
+      "fund_sizes_range": 759.669393939394,
+      "kde_values": 0.0002035290063406894
+    },
+    {
+      "fund_sizes_range": 774.7781818181819,
+      "kde_values": 0.0001915534210631168
+    },
+    {
+      "fund_sizes_range": 789.8869696969698,
+      "kde_values": 0.00018033626587952875
+    },
+    {
+      "fund_sizes_range": 804.9957575757576,
+      "kde_values": 0.00016986229518473544
+    },
+    {
+      "fund_sizes_range": 820.1045454545455,
+      "kde_values": 0.00016011925677627048
+    },
+    {
+      "fund_sizes_range": 835.2133333333334,
+      "kde_values": 0.00015109759288946565
+    },
+    {
+      "fund_sizes_range": 850.3221212121213,
+      "kde_values": 0.00014279009072164198
+    },
+    {
+      "fund_sizes_range": 865.4309090909092,
+      "kde_values": 0.00013519149928558534
+    },
+    {
+      "fund_sizes_range": 880.539696969697,
+      "kde_values": 0.000128298126781123
+    },
+    {
+      "fund_sizes_range": 895.6484848484849,
+      "kde_values": 0.0001221074298436064
+    },
+    {
+      "fund_sizes_range": 910.7572727272727,
+      "kde_values": 0.00011661760318937272
+    },
+    {
+      "fund_sizes_range": 925.8660606060606,
+      "kde_values": 0.0001118271754861978
+    },
+    {
+      "fund_sizes_range": 940.9748484848485,
+      "kde_values": 0.00010773461486654481
+    },
+    {
+      "fund_sizes_range": 956.0836363636364,
+      "kde_values": 0.00010433794548349556
+    },
+    {
+      "fund_sizes_range": 971.1924242424243,
+      "kde_values": 0.00010163437496604001
+    },
+    {
+      "fund_sizes_range": 986.3012121212122,
+      "kde_values": 9.96199316142276e-5
+    },
+    {
+      "fund_sizes_range": 1001.4100000000001,
+      "kde_values": 9.828910970706054e-5
+    },
+    {
+      "fund_sizes_range": 1016.518787878788,
+      "kde_values": 9.763452136811564e-5
+    },
+    {
+      "fund_sizes_range": 1031.6275757575759,
+      "kde_values": 9.764655400819818e-5
+    },
+    {
+      "fund_sizes_range": 1046.7363636363636,
+      "kde_values": 9.831303337739013e-5
+    },
+    {
+      "fund_sizes_range": 1061.8451515151517,
+      "kde_values": 9.961889362489265e-5
+    },
+    {
+      "fund_sizes_range": 1076.9539393939394,
+      "kde_values": 0.00010154585738046756
+    },
+    {
+      "fund_sizes_range": 1092.0627272727274,
+      "kde_values": 0.00010407213061969196
+    },
+    {
+      "fund_sizes_range": 1107.1715151515152,
+      "kde_values": 0.00010717211883300417
+    },
+    {
+      "fund_sizes_range": 1122.280303030303,
+      "kde_values": 0.00011081617266049143
+    },
+    {
+      "fund_sizes_range": 1137.389090909091,
+      "kde_values": 0.00011497037255962041
+    },
+    {
+      "fund_sizes_range": 1152.4978787878788,
+      "kde_values": 0.00011959636313057392
+    },
+    {
+      "fund_sizes_range": 1167.6066666666668,
+      "kde_values": 0.00012465124833750966
+    },
+    {
+      "fund_sizes_range": 1182.7154545454546,
+      "kde_values": 0.0001300875589575463
+    },
+    {
+      "fund_sizes_range": 1197.8242424242426,
+      "kde_values": 0.00013585330310984453
+    },
+    {
+      "fund_sizes_range": 1212.9330303030304,
+      "kde_values": 0.00014189210963846784
+    },
+    {
+      "fund_sizes_range": 1228.0418181818181,
+      "kde_values": 0.00014814347244684984
+    },
+    {
+      "fund_sizes_range": 1243.1506060606062,
+      "kde_values": 0.0001545431016397576
+    },
+    {
+      "fund_sizes_range": 1258.259393939394,
+      "kde_values": 0.0001610233845802183
+    },
+    {
+      "fund_sizes_range": 1273.368181818182,
+      "kde_values": 0.00016751395680024165
+    },
+    {
+      "fund_sizes_range": 1288.4769696969697,
+      "kde_values": 0.0001739423792252274
+    },
+    {
+      "fund_sizes_range": 1303.5857575757577,
+      "kde_values": 0.00018023491451207266
+    },
+    {
+      "fund_sizes_range": 1318.6945454545455,
+      "kde_values": 0.00018631739160379445
+    },
+    {
+      "fund_sizes_range": 1333.8033333333333,
+      "kde_values": 0.0001921161440209121
+    },
+    {
+      "fund_sizes_range": 1348.9121212121213,
+      "kde_values": 0.00019755900409548332
+    },
+    {
+      "fund_sizes_range": 1364.020909090909,
+      "kde_values": 0.0002025763324561324
+    },
+    {
+      "fund_sizes_range": 1379.129696969697,
+      "kde_values": 0.00020710205972821
+    },
+    {
+      "fund_sizes_range": 1394.2384848484849,
+      "kde_values": 0.00021107471574059942
+    },
+    {
+      "fund_sizes_range": 1409.3472727272729,
+      "kde_values": 0.00021443842062363391
+    },
+    {
+      "fund_sizes_range": 1424.4560606060606,
+      "kde_values": 0.00021714381210603662
+    },
+    {
+      "fund_sizes_range": 1439.5648484848487,
+      "kde_values": 0.00021914888410504857
+    },
+    {
+      "fund_sizes_range": 1454.6736363636364,
+      "kde_values": 0.0002204197133503498
+    },
+    {
+      "fund_sizes_range": 1469.7824242424242,
+      "kde_values": 0.00022093105325100243
+    },
+    {
+      "fund_sizes_range": 1484.8912121212122,
+      "kde_values": 0.0002206667774329275
+    },
+    {
+      "fund_sizes_range": 1500.0,
+      "kde_values": 0.00021962015923816195
+    }
+  ]
+}

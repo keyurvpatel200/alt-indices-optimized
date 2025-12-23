@@ -1,0 +1,24 @@
+[
+  {
+    "label": "Total Number of Peer Funds",
+    "className": "eqitity-list",
+    "values": "250 funds"
+  },
+  {
+    "label": "Funds without Size",
+    "className": "tag-list special-item",
+    "values": "15 funds"
+  },
+  {
+    "label": "Funds without Performance Figures",
+    "values": "8 funds"
+  },
+  {
+    "label": "Funds with Stale Valuation",
+    "values": "12 funds"
+  },
+  {
+    "label": "Outliers Detected",
+    "values": "5 outliers"
+  }
+]

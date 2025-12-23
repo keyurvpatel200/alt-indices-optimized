@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Healthcare",
+    "icon": "healthcare",
+    "category": "Healthcare & Life Sciences"
+  },
+  {
+    "id": 2,
+    "name": "Diversified",
+    "icon": "diversified",
+    "category": "Diversified"
+  },
+  {
+    "id": 3,
+    "name": "Information Technology",
+    "icon": "informationTech",
+    "category": "Technology"
+  },
+  {
+    "id": 4,
+    "name": "Business Services",
+    "icon": "business",
+    "category": "Business Services"
+  },
+  {
+    "id": 5,
+    "name": "Industrials",
+    "icon": "industrial",
+    "category": "Industrials"
+  },
+  {
+    "id": 6,
+    "name": "Consumer Discretionary",
+    "icon": "consumer",
+    "category": "Consumer"
+  },
+  {
+    "id": 7,
+    "name": "Energy & Utilities",
+    "icon": "energy",
+    "category": "Energy & Utilities"
+  },
+  {
+    "id": 8,
+    "name": "Telecoms & Media",
+    "icon": "telecoms",
+    "category": "Media & Communications"
+  },
+  {
+    "id": 9,
+    "name": "Financial & Insurance Services",
+    "icon": "financial",
+    "category": "Financial Services"
+  },
+  {
+    "id": 10,
+    "name": "Raw Materials & Natural Resources",
+    "icon": "rowMaterial",
+    "category": "Materials & Resources"
+  },
+  {
+    "id": 11,
+    "name": "Real Estate",
+    "icon": "realEstate",
+    "category": "Real Estate"
+  },
+  {
+    "id": 12,
+    "name": "Automotive",
+    "icon": "industrial",
+    "category": "Automotive"
+  },
+  {
+    "id": 13,
+    "name": "Aerospace & Defense",
+    "icon": "industrial",
+    "category": "Aerospace & Defense"
+  },
+  {
+    "id": 14,
+    "name": "Agriculture",
+    "icon": "rowMaterial",
+    "category": "Agriculture"
+  },
+  {
+    "id": 15,
+    "name": "Biotechnology",
+    "icon": "healthcare",
+    "category": "Biotechnology"
+  },
+  {
+    "id": 16,
+    "name": "Chemical",
+    "icon": "rowMaterial",
+    "category": "Chemicals"
+  },
+  {
+    "id": 17,
+    "name": "Construction",
+    "icon": "industrial",
+    "category": "Construction"
+  },
+  {
+    "id": 18,
+    "name": "Education",
+    "icon": "business",
+    "category": "Education"
+  },
+  {
+    "id": 19,
+    "name": "Entertainment",
+    "icon": "telecoms",
+    "category": "Entertainment"
+  },
+  {
+    "id": 20,
+    "name": "Food & Beverage",
+    "icon": "consumer",
+    "category": "Food & Beverage"
+  },
+  {
+    "id": 21,
+    "name": "Gaming",
+    "icon": "telecoms",
+    "category": "Gaming"
+  },
+  {
+    "id": 22,
+    "name": "Government",
+    "icon": "business",
+    "category": "Government"
+  },
+  {
+    "id": 23,
+    "name": "Hospitality",
+    "icon": "consumer",
+    "category": "Hospitality"
+  },
+  {
+    "id": 24,
+    "name": "Manufacturing",
+    "icon": "industrial",
+    "category": "Manufacturing"
+  },
+  {
+    "id": 25,
+    "name": "Transportation",
+    "icon": "industrial",
+    "category": "Transportation"
+  }
+]

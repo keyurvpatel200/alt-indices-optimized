@@ -1,0 +1,266 @@
+.profile-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+
+  .left-bar {
+    width: 250px;
+    position: sticky;
+    top: 0px;
+
+  }
+
+  .right-bar {
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.file-uploade-wrap {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+
+.profile-menu-bar {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.user-wrapper-box {
+  padding: 0px;
+  gap: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    border-color: #E6E8F0;
+    border-radius: 8px;
+  }
+}
+
+.profile-menu {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: #081735;
+    display: flex;
+    padding: 10px 0px;
+    border-left: 5px solid transparent;
+    padding-left: 20px;
+    cursor: pointer;
+
+    span {
+      width: 20px;
+      display: flex;
+      margin-right: 12px;
+    }
+
+    &:hover {
+      border-left: 5px solid #0f121b;
+
+      svg {
+        path {
+          fill: #0f121b;
+        }
+      }
+    }
+
+    &.active {
+      border-left: 5px solid #0f121b;
+
+      svg {
+        path {
+          fill: #0f121b;
+        }
+      }
+    }
+  }
+}
+
+.passowrd-regex {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    font-size: 14px;
+    color: #081735;
+    font-weight: 700;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+  li {
+    color: #8F95B2;
+  }
+
+  .save-change-btn {
+    background-color: #0f121b;
+    border-radius: 8px;
+    color: white;
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    font-size: 14px;
+    border: none;
+    font-weight: 700;
+    margin: 2rem auto 0px;
+  }
+}
+
+.saperate-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    margin-bottom: 5px;
+    color: #081735;
+  }
+
+  .upload-section {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    .drag-section {
+      width: calc(100% - 100px);
+      display: flex;
+
+      .App {
+        width: 100%;
+
+        label {
+          min-width: 100%;
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          border: 2px dashed #E6E8F0;
+          height: 70px;
+          justify-content: center;
+        }
+      }
+    }
+
+    .guZdik {
+      svg {
+        margin-right: 5px;
+        width: 36px;
+        height: 36px;
+      }
+
+      path {
+        fill: #D8DAE5;
+      }
+    }
+
+    .jWkLDY {
+      justify-content: center;
+      gap: 10px;
+      flex-grow: 0;
+
+      span {
+        font-size: 14px;
+      }
+
+      .file-types {
+        color: #8F95B2;
+        max-width: 100%;
+      }
+
+      .kFhUBM {
+        .span {
+          color: #8E59FF;
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+
+  .file-action {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media(max-width: 990px) {
+  .profile-wrapper {
+    flex-direction: column;
+  }
+  .profile-wrapper .left-bar {
+    width: 100%;
+  }
+  .profile-menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile-menu a {
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+  }
+  .profile-wrapper .right-bar {
+    width: 100%;
+  }
+}
+
+@media(max-width: 990px) {
+  .profile-menu a {
+    text-indent: -200px;
+    overflow: hidden;
+    border-left: 0px;
+    border-bottom: 5px solid transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .profile-menu a.active, .profile-menu a:hover {
+    border-left: 0px;
+    border-bottom: 5px solid #0f121b;
+  }
+  .profile-menu a span {
+    margin-right: 0px;
+  }
+  .profile-menu-bar {
+    padding: 1rem;
+    padding-bottom: 0px;
+  }
+}
+
+@media(max-width: 990px) {
+  .saperate-section .upload-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .saperate-section .upload-section .drag-section {
+    width: 100%;
+  }
+  .saperate-section .upload-section .jWkLDY {
+    flex-direction: column;
+  }
+  .saperate-section .upload-section .drag-section .App label {
+    min-height: 80px;
+    height: auto;
+  }
+}

@@ -1,0 +1,47 @@
+[
+    {
+      "label": "Benchmark Type",
+      "className": "eqitity-list",
+      "values": ["Equity"]
+    },
+    {
+      "label": "Tags",
+      "className": "tag-list special-item",
+      "values": ["Growth", "High risk"]
+    },
+    {
+      "label": "Fund Selected",
+      "values": ["Fund A"]
+    },
+    {
+      "label": "Benchmark Fund Count",
+      "values": ["3"]
+    },
+    {
+      "label": "Date Created",      
+      "values": ["2024-12-01"]
+    },
+    {
+      "label": "Fund Size Range",
+      "values": ["$100M - $500M"]
+    },
+    {
+      "label": "Sub-strategy",
+      "className": "eqitity-list",
+      "values": ["Long/Short Equity"]
+    },
+    {
+      "label": "Countries",
+      "className": "tag-list special-item",
+      "values": ["United States", "Canada"]
+    },
+    {
+      "label": "Geographic Region",
+      "values": ["North America"]
+    },
+    {
+      "label": "Outlier Treatment",
+      "className": "eqitity-list",
+      "values": ["Outlier Treatment"]
+    }
+  ]

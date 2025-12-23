@@ -1,0 +1,511 @@
+.recently-access-reports-wrapper{    
+}
+
+.create-fund-report-wrapper{
+    display: flex;
+}
+.recently-accessed-fund-list-container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.recently-accessed-fund-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:6px 6px 20px 6px;
+    height: 210px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 12px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.recent-aceessed-picture{
+    width: 100%;
+    height: 140px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    background: #F7F7F7;
+    border-radius: 12px;
+    padding: 1rem;
+    padding-bottom: 0px;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+}
+
+.recent-link-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #1D2939;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-inline: 1rem;
+}
+
+.benchmark-cell{
+    img{
+        width: 40px;
+        height: 40px;
+        left: 0px;
+        top: 0px;
+        background: #D9D9D9;
+        opacity: 0.5;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+.report-list-of-fund-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1rem 0;
+    margin-top: 2rem;
+}
+.report-list-of-fund-search-row{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    input{
+        box-sizing: border-box;
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        gap: 8px;
+        width: 280px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        padding-left: 3rem;
+    }
+
+    button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 12px;
+        gap: 8px;
+        min-width: 184px;
+        height: 44px;
+        background: #3A495C;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        color: white;
+        border: none;
+    }
+}
+.report-list-of-fund-number{
+    font-size: 1.2rem;
+    color: #1D2939;
+    font-weight: 600;
+}
+
+.benchmark-name-icon{
+    display: flex;    
+}
+.benchmark-name-icon img{
+    position: absolute;
+    left: 10px;
+    top:10px;
+}
+
+.archived-reports-row{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.archived-reports-btn{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    gap: 8px;
+    width: 264px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    font-size: 14px;
+    color: #3A495C;
+}
+
+/* Create Report */
+.create-fund-report-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.create-fund-report-title h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.element-to-create-fund-report{    
+    width: 468px;
+    background: white;    
+    padding:2rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.option-fund-report {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.option-fund-report ul {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #D0D5DD;
+    width: 100%;
+    padding-left: 0px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.option-fund-report ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    gap: 8px;
+    width: 33.33%;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+}
+
+.option-fund-report ul li.active {
+    background-color: #3A495C;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option-fund-report ul li::after {
+    border-left: 1px solid #D0D5DD;
+    content: '';
+    width: 1px;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+
+.option-fund-report ul li:hover {
+    background-color: #3A495C;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option-fund-report ul li:hover::after {
+    display: none;
+}
+
+.option-fund-report ul li:last-child::after {
+    display: none;
+}
+
+/* Hide first li's ::after when second li is hovered (requires :has() support) */
+.option-fund-report ul:has(li:nth-child(2):hover) li:nth-child(1)::after {
+    display: none;
+}
+
+/* Hide second li's ::after when third li is hovered (requires :has() support) */
+.option-fund-report ul:has(li:nth-child(3):hover) li:nth-child(2)::after {
+    display: none;
+}
+.search-component-fund-report{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.search-component-fund-report input{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    width: 100%;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    font-size: 14px;
+    padding-left: 2.5rem;
+}
+.search-component-fund-report img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.list-of-fund-cards ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    gap:8px;
+}
+.list-of-fund-cards ul li{
+box-sizing: border-box;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 10px 6px 8px;
+gap: 8px;
+min-width: 99px;
+height: 36px;
+border: 1px solid #D0D5DD;
+border-radius: 8px;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+font-size: 14px;
+}
+
+.list-of-fund-cards ul li span{
+width: 24px;
+height: 24px;
+flex: none;
+order: 0;
+flex-grow: 0;
+background-color: #D9D9D9;
+border-radius: 6px;
+}
+
+.drag-and-drop-fund-report-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.drag-and-drop-fund-report-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+    border-radius: 12px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.drag-and-drop-fund-report-card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: start;
+}
+
+.drag-left-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.drag-left-bar-img-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(0deg, #3A495C, #3A495C), #FFFFFF;
+    box-shadow: 0px 1.09091px 2.18182px rgba(16, 24, 40, 0.05);
+    border-radius: 8.72727px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    justify-content: center;
+}
+.drag-left-bar-text{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.drag-left-bar-text span{
+    font-weight: 600;
+}
+.drag-left-bar-text span label{
+    font-weight:400;
+}
+
+.drag-left-bar-text ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;    
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.drag-left-bar-text ul li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 6px;
+    min-width: 54px;
+    height: 28px;
+    background: #DAEAF6;
+    border: 1px solid #78A7CA;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-size: 14px;
+}
+.drag-left-bar-text ul li:nth-child(2){
+    background: #D4AFB9;
+    border: 1px solid #A47481;
+}
+.drag-left-bar-text ul li:nth-child(3){
+    background: #D4AFB9;
+    border: 1px solid #A47481;
+    color: #522F38;
+}
+.drag-add-all-button{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+     color: #0F4E7E;
+}
+
+.drag-related-items-boxes-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.each-drag-item{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 10px;
+    width: 194px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.drag-item-icon{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    background: rgba(217, 217, 217, 0.50);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.drag-item-text{
+    font-size:14px;
+    color: #0A0D14;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.drag-item-text span{
+    width: 80%;
+    line-height: 1.2;
+}
+
+.item-info{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: transparent;
+    border: none; 
+}
+
+.load-more-item-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+}
+
+.set-element-to-create-fund-report{
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 468px);
+    background-color: #D9D9D9;
+    align-items: stretch
+}
+
+.content-area{
+    padding-right: 0px;
+}

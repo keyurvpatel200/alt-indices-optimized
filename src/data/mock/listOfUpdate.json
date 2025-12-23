@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Fund Size (USD) Update",
+    "additionalInfoNeeded": true,
+    "additionalInfoText": "Additional information needed",
+    "showInfoIcon": true
+  },
+  {
+    "label": "Investment Strategy Update",
+    "additionalInfoNeeded": true,
+    "additionalInfoText": "No additional information needed",
+    "showInfoIcon": false
+  },
+  {
+    "label": "Fund Size (USD) Update",
+    "additionalInfoNeeded": true,
+    "additionalInfoText": "Additional information needed",
+    "showInfoIcon": true
+  },
+  {
+    "label": "Investment Strategy Update",
+    "additionalInfoNeeded": true,
+    "additionalInfoText": "No additional information needed",
+    "showInfoIcon": false
+  },
+  {
+    "label": "Investment Strategy Update",
+    "additionalInfoNeeded": true,
+    "additionalInfoText": "No additional information needed",
+    "showInfoIcon": true
+  }
+]

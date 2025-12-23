@@ -1,0 +1,580 @@
+{
+  "companyID": {
+    "hidden": true,
+    "description": "Unique identifier for portfolio company that could be anonymized by the GP. Where relevant, this should be held consistent across data submissions for different years of the initiative."
+  },
+  "companyName": {
+    "label": "Company name",
+    "category": "Company Fundamentals",
+    "step": "Company Info",
+    "hidden": true
+  },
+  "year": {
+    "label": "Year",
+    "category": "Company Fundamentals",
+    "validators": [
+      "minNumber: 2023"
+    ],
+    "step": "Company Info",
+    "hidden": true
+  },
+  "countryOfDomicile": {
+    "label": "Country of domicile / headquarters",
+    "description": "Country whose operations have the largest contribution to company revenue.",
+    "category": "Company Fundamentals",
+    "step": "Company Info"
+  },
+  "countryOfOperations": {
+    "label": "Primary country of operations",
+    "description": "Country whose operations have the largest contribution to company revenue.",
+    "category": "Company Fundamentals",
+    "step": "Company Info"
+  },
+  "companyStructure": {
+    "label": "Company structure",
+    "category": "Company Fundamentals",
+    "step": "Company Info"
+  },
+  "growthStage": {
+    "label": "Growth Stage Of Company",
+    "description": "Description of company growth stage. This is based on self-determination.",
+    "note": "This is not a description of the investment strategy",
+    "category": "Company Fundamentals",
+    "step": "Company Info"
+  },
+  "sanctionedOperations": {
+    "label": "Operations and/or Revenue in Sanctioned Countries",
+    "description": "To ensure compliance with sanctions relating to the provision of benchmark services",
+    "note": "Please indicate if any data relates to operations in and/or revenue from: Cuba, Iran, North Korea, Russia, Belarus, Syria, Crimea, Donetsk or Luhansk regions of Ukraine.",
+    "category": "Company Fundamentals",
+    "fields": [
+      "No - this company has no operations in, or revenue from, sanctioned countries",
+      "No - any data related to operations in, or revenue from, sanctioned countries has been removed",
+      "Yes - there is data that relates to operations in, or revenue from, sanctioned countries"
+    ],
+    "step": "Company Info",
+    "fieldType": "RadioButton"
+  },
+  "primarySector": {
+    "label": "Primary sector of operations (SICS)",
+    "description": "Sector according to SASB Sustainable Industry Classification System (SICS).",
+    "note": "Sector is broader than Industry.",
+    "category": "Company Fundamentals",
+    "step": "Sector & Industry"
+  },
+  "primaryIndustry": {
+    "label": "Primary industry of operations (SICS)",
+    "description": "Industry according to SASB Sustainable Industry Classification System (SICS).",
+    "note": "Industry is nested under Sector.",
+    "category": "Company Fundamentals",
+    "step": "Sector & Industry"
+  },
+  "primarySubIndustry": {
+    "label": "Primary sub-industry of operations (GICS / TICCS)",
+    "description": "Field to provide extra granularity on SICS industry of operations - using a combination of GICS sub-industries and TICCS industrial classes depending on which is best suited to the chosen industry.",
+    "category": "Company Fundamentals",
+    "step": "Sector & Industry"
+  },
+  "gpName": {
+    "label": "General Partner Name",
+    "description": "Name of the general partner providing the data",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information",
+    "disabled": true
+  },
+  "initialInvestmentYear": {
+    "label": "Year of initial investment in company",
+    "description": "Year the first investment by the GP into the relevant portfolio company was made.",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information"
+  },
+  "isGPPrivateEquityOrInfra": {
+    "label": "Is GP Private Equity or Infra?",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information",
+    "fields": ["Yes", "No"],
+    "enum": ["Y", "N"],
+    "value": "N",
+    "fieldType": "RadioButton",
+    "skip": true
+  },
+  "isGPPrivateCredit": {
+    "label": "Is GP Private Credit?",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information",
+    "fields": ["Yes", "No"],
+    "enum": ["Y", "N"],
+    "value": "N",
+    "fieldType": "RadioButton",
+    "skip": true
+  },
+  "coInvestedWithGPs": {
+    "label": "Are you co-invested with one or more PE/Infra GPs in this PortCo?",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information",
+    "fields": [
+      "Yes",
+      "No"
+    ],
+    "fieldType": "RadioButton",
+    "hidden": "isGPPrivateEquityOrInfra=='N'"
+  },
+  "pcSponsorOwnership": {
+    "label": "Is this PortCo you are lending to owned by one or more Private Equity GP(s)?",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information",
+    "fields": [
+      "Yes",
+      "No"
+    ],
+    "fieldType": "RadioButton",
+    "hidden": "isGPPrivateCredit=='N'"
+  },
+  "relevantGPs": {
+    "label": "GPs to list any other GPs that are invested in the portfolio company.",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information",
+    "hidden": "pcSponsorOwnership=='No'"
+  },
+  "percentGPOwnership": {
+    "label": "Percent Of GP Ownership",
+    "description": "Total holdings that you as a GP control through equity, between 0-100%.",
+    "note": "Percent GP ownership should include co-investment share with effective GP control.",
+    "category": "Company Fundamentals",
+    "step": "General Partner Information",
+    "hidden": "isGPPrivateEquityOrInfra=='N'"
+  },
+  "fundID": {
+    "label": "Fund ID",
+    "description": "Unique identifier for fund that portfolio company is a part of, that could be anonymized by the GP. Where relevant, this should be held consistent across data submissions for different years of the initiative.",
+    "step": "Fund Information",
+    "disabled": true,
+    "hidden": true
+  },
+  "fundName": {
+    "label": "Fund name",
+    "description": "",
+    "category": "Company Fundamentals",
+    "step": "Fund Information",
+    "disabled": true
+  },
+  "fundType": {
+    "label": "Fund type",
+    "description": "",
+    "category": "Company Fundamentals",
+    "step": "Fund Information"
+  },
+  "fundClassification": {
+    "label": "Fund Classification",
+    "description": "If the fund is classified under SFDR as Article 6, Article 8, or Article 9 (if relevant).",
+    "category": "Company Fundamentals",
+    "step": "Fund Information"
+  },
+  "percentFundOwnership": {
+    "label": "Percent Of Fund Ownership",
+    "category": "Company Fundamentals",
+    "step": "Fund Information",
+    "hidden": "isGPPrivateEquityOrInfra=='N'"
+  },
+  "loanPrincipal": {
+    "label": "Quantum of loan",
+    "description": "Principal of loan lent to company.",
+    "note": "In the currently you've indicated at 'Financial Information' section",
+    "category": "Company Fundamentals",
+    "step": "Fund Information",
+    "hidden": "isGPPrivateCredit=='N'"
+  },
+  "currency": {
+    "label": "Currency",
+    "description": "Description of monetary unit using three letter code (ISO 4217 code).",
+    "category": "Company Fundamentals",
+    "step": "Financial Information"
+  },
+  "revenue": {
+    "label": "Revenue",
+    "description": "Annual gross revenue reported at the end of the calendar year (corresponding to 'Currency' field).",
+    "note": "Please indicate if different definition of revenue used due to industry-specific standard.",
+    "category": "Company Fundamentals",
+    "step": "Financial Information"
+  },
+  "currentYearFTEs": {
+    "label": "Total number of Full Time Equivalents (FTE) at end of current year",
+    "category": "Company Fundamentals",
+    "step": "Workforce data"
+  },
+  "averageCurrentYearFTEs": {
+    "label": "Average number of Full Time Equivalents (FTE) in current year",
+    "category": "Company Fundamentals",
+    "step": "Workforce data"
+  },
+  "previousYearFTEs": {
+    "label": "Total number of Full Time Equivalents (FTE) at end of previous year",
+    "category": "Company Fundamentals",
+    "step": "Workforce data"
+  },
+  "averagePreviousYearFTEs": {
+    "label": "Average number of Full Time Equivalents (FTE) in previous year",
+    "category": "Company Fundamentals",
+    "step": "Workforce data"
+  },
+  "scope1GHGEmissions": {
+    "label": "Scope 1 Emissions (mtCO2e)",
+    "description": "Direct emissions due to owned, controlled sources accounted for using GHG Protocol",
+    "note": "Submit data relating to the entire portfolio company and make no adjustments for equity or ownership stake",
+    "category": "GHG Emissions",
+    "step": "Emissions by Methodology"
+  },
+  "scope1Methodology": {
+    "label": "Scope 1 predominant Methodology",
+    "description": "Choice of predominant methodology used to determine emissions.",
+    "category": "GHG Emissions",
+    "step": "Emissions by Methodology"
+  },
+  "scope2GHGEmissions": {
+    "label": "Scope 2 Emissions (mtCO2e)",
+    "description": "Indirect emissions (measured in metric tons CO2e) due to purchase of electricity, heat, steam, etc. accounted for using GHG Protocol.",
+    "note": "Submit data relating to the entire portfolio company and make no adjustments for equity or ownership stake.",
+    "category": "GHG Emissions",
+    "step": "Emissions by Methodology"
+  },
+  "scope2Methodology": {
+    "label": "Scope 2 predominant Methodology",
+    "description": "Choice of predominant methodology used to determine emissions.",
+    "category": "GHG Emissions",
+    "step": "Emissions by Methodology"
+  },
+  "scope3GHGEmissions": {
+    "label": "Scope 3 Emissions (mtCO2e)",
+    "description": "All other indirect emissions (measured in metric tons CO2e) accounted for using GHG Protocol.",
+    "note": "Submit data relating to the entire portfolio company and make no adjustments for equity or ownership stake.",
+    "category": "GHG Emissions",
+    "step": "Emissions by Methodology"
+  },
+  "scope3Methodology": {
+    "label": "Scope 2 predominant Methodology",
+    "description": "Choice of predominant methodology used to determine emissions.",
+    "category": "GHG Emissions",
+    "step": "Emissions by Methodology"
+  },
+  "scope3EmissionCategories": {
+    "fields": [
+      {
+        "label": "Purchased good and services",
+        "description": "Extractions, production and transportation of good and services purchased or acquired by the reporting company in the reporting year",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Capital Goods",
+        "description": "Extractions, production and transportation of capital goods purchased or acquired by the reporting company in the reporting year",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Fuel and energy activities",
+        "description": "Extractions, production and transportation of fuels and energy purchased or acquired by the reporting company in the reporting year, not already accounted for in Scope 1 or Scope 2",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Upstream transport & distribution",
+        "description": "Transportation and distribution of products purchased by the reporting company in the reporting year",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Waste generated",
+        "description": "Disposal & treatment of waste generated in the reporting company's operations in the reporting year (in facilities not owned or controlled by the reporting company)",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Business travel",
+        "description": "Transportation of employees for business-related activities during the reporting year (in vehicles not owned or operated by the reporting company)",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Employee commuting",
+        "description": "Transportation of employees between their homes and their worksites during the reporting year (in vehicles not owned or operated by the reporting company)",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Upstream leased assets",
+        "description": "Operation of assets leased by the reporting company (lessee) in the reporting year and not included in Scope 1 and Scope 2 - reported by lessee",
+        "note": "upstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Downstream transport & dist.",
+        "description": "Transportation and distribution of products sold by the reporting company's operations and the end consumer",
+        "note": "downstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Processing of sold products",
+        "description": "Processing of intermediate products sold in the reporting year by downstream companies (e.g., manufacturers)",
+        "note": "downstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Use of sold products",
+        "description": "End use of good and services sold by the reporting company in the reporting year",
+        "note": "downstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "End of life of sold products",
+        "description": "Waste disposal and treatment of products sold by the reporting company (in the reporting year) at the end of their life",
+        "note": "downstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Downstream leased assets",
+        "description": "Operation of assets owned by the reporting company (lessor) ald leased to other entities in the reporting year, not included in Scope 1 and Scope 2 - reported by lessor",
+        "note": "downstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Frachises",
+        "description": "Operation of frachises in the reporting year, not included in Scope 1 and Scope 2 - reported by franchisor",
+        "note": "downstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }, {
+        "label": "Investments",
+        "description": "Operation of investments (including equity and debt investments and project finance) in the reporting year, not included in Scope 1 or Scope 2",
+        "note": "downstream",
+        "fieldType": "card",
+        "type": "boolean"
+      }
+    ],
+    "category": "GHG Emissions",
+    "step": "Scope 3 Emission Categories"
+  },
+  "isRepresentativeTotalScope3": {
+    "label": "Do you think this is representative of the total Scope 3 Emissions?",
+    "description": "",
+    "category": "GHG Emissions",
+    "step": "Summary",
+    "fields": [
+      "Yes",
+      "No"
+    ],
+    "fieldType": "RadioButton"
+  },
+  "emissionComments": {
+    "label": "Emission comments",
+    "description": "Description of relevant methodology and any comments that may be relevant",
+    "category": "GHG Emissions",
+    "step": "Summary",
+    "height": 4
+  },
+  "externalReviewComments": {
+    "label": "External Review Comments",
+    "description": "Commentary on whether emissions data has been reviewed by an external 3rd party. Review of GHG emissions inventory by an independent firm to assess your organization’s emissions data collection and reporting.",
+    "category": "GHG Emissions",
+    "step": "Summary",
+    "height": 4
+  },
+  "decarbonizationPlan": {
+    "label": "Does this PortCo / asset have a decarbonization strategy/plan in place?",
+    "description": "Does the PortCo have a time-bound action plan that clearly outlines how an organization will pivot its existing assets, operations, & entire business model towards a trajectory that aligns with the latest & most ambitious climate science recommendations.",
+    "fields": [
+      "No",
+      "Yes, but without board oversight",
+      "Yes, with board oversight"
+    ],
+    "category": "Net Zero",
+    "fieldType": "RadioButton"
+  },
+  "emissionReductionTarget": {
+    "label": "Does the PortCo / asset have a short-term (I.e., 5- to 10-years) GHG emission reduction target in place?",
+    "description": "If the portfolio company is Paris-aligned, they are aligned with net zero by 2050 with contributions to limit global warming to no more than 1.5 degrees Celsius, in line with the latest climate science and higher end ambition of the Paris agreement.",
+    "fields": [
+      "No",
+      "Yes, but it is not Paris-aligned",
+      "Yes, and it is Paris–aligned (covering  Scope 1, 2, & material Scope 3*)"
+    ],
+    "category": "Net Zero",
+    "fieldType": "RadioButton"
+  },
+  "netZeroGoal": {
+    "label": "Does the PortCo / asset have a long-term net zero goal?",
+    "description": "Assess if the PortCo is aligned with Paris aligned net zero commitment of limiting global warming to 1.5 degrees by 2050 or if the PortCo plans to align in the future.",
+    "fields": [
+      "No - and no plan to set one (e.g. lack of viable pathway)",
+      "No - but we plan to establish this in the near term (<2 years)",
+      "No - we have a long-term goal but not fully aligned with a net zero pathway (i.e., NZ emissions by 2050 or sooner)",
+      "Yes - aligned with a net zero pathway (i.e., NZ emissions by 2050 or sooner)"
+    ],
+    "category": "Net Zero",
+    "fieldType": "RadioButton"
+  },
+  "totalEnergyConsumption": {
+    "label": "Total energy consumption in kWh",
+    "description": "The scope of energy consumption includes only energy directly consumed by the entity during the reporting period.\nThe scope of energy consumption includes energy from all sources, including energy purchased from sources external to the entity and energy produced by the entity itself (self-generated). For example, direct fuel usage, purchased electricity, and heating, cooling, and steam energy are all included within the scope of energy consumption.",
+    "note": "Please convert data to kWh when different units are used locally",
+    "category": "Renewable Energy Consumption"
+  },
+  "renewableEnergyConsumption": {
+    "label": "Renewable energy consumption in kWh",
+    "description": "Total renewable energy consumed from: geothermal, solar, sustainably sourced biomass (including biogas), hydropower and wind energy sources. Accounting should follow best practices outlined in RE100 and GHG Protocol Scope 2 Guidance.",
+    "note": "The EDCI will accept calculations based on either location averages or supplier-based decisions, but will need to know which you are using.\nPlease convert data to kWh when different units are used locally",
+    "category": "Renewable Energy Consumption"
+  },
+  "renewableEnergyMethodology": {
+    "label": "Renewable energy consumption methodology",
+    "description": "Choice of methodology used to determine renewable energy consumption.",
+    "category": "Renewable Energy Consumption",
+    "fields": [
+      {
+        "label": "Location average methodology (Scope 2)",
+        "description": "Quantifies renewable energy consumption by defining the geographic location(s) where the company purchases energy from and taking the average renewable energy share of the total electricity mix for that geographic region."
+      }, {
+        "label": "Supplier-based methodology (Scope 2)",
+        "description": "Requires companies to calculate their renewable energy consumption by counting only contracts the firm has made with energy suppliers"
+      }, {
+        "label": "Other"
+      }
+    ],
+    "fieldType": "RadioButton"
+  },
+  "renewableEnergyCommentary": {
+    "label": "Total energy consumption",
+    "description": "Description of methodology used and any comments that may be relevant.",
+    "category": "Renewable Energy Consumption",
+    "height": 4
+  },
+  "boardMembers": {
+    "label": "Total number of board members",
+    "description": "Number of people on the Board at end of Calendar Year (Board defined as the member-elected top governing body of the company and often includes nonexecutive members).",
+    "category": "Diversity"
+  },
+  "boardWomen": {
+    "label": "Number of women board members",
+    "description": "Number of women on board of directors at end of calendar year",
+    "category": "Diversity"
+  },
+  "boardUnderrepresentedGroups": {
+    "label": "Number of board members from under-represented groups",
+    "description": "Number of people self-identified as belonging to an under-represented group (i.e. belonging to an ethnic minority within a given country’s context).",
+    "category": "Diversity"
+  },
+  "cSuiteEmployees": {
+    "label": "Total number of C-Suite employees",
+    "description": "Number of people in C-suite positions at end of Calendar Year (CEO and any senior executives or leadership roles reporting directly to the CEO, e.g. CFO, COO, CAO, Head of HR etc. as defined in ILPA’s Diversity Metrics Template)",
+    "category": "Diversity"
+  },
+  "cSuiteWomen": {
+    "label": "Number of women C-suite employees",
+    "description": "Number of women in C-suite positions at end of Calendar Year",
+    "category": "Diversity"
+  },
+  "workInjuries": {
+    "label": "Number of work-related injuries",
+    "description": "Total number of work-related injuries, as defined by local jurisdiction. Injury records could come from national systems as part of primary data source",
+    "category": "Work Related Injuries"
+  },
+  "commutingIncidentInclusion": {
+    "label": "Does this injuries number include commuting incidents?",
+    "description": "Indicate if reported injuries includes commuting",
+    "category": "Work Related Injuries",
+    "fields": [
+      "Yes",
+      "No"
+    ],
+    "fieldType": "RadioButton"
+  },
+  "workFatalities": {
+    "label": "Number of work-related fatalities",
+    "description": "Total number of work-related fatalities as defined by local jurisdiction, within the last calendar year. Fatality records could come from national systems as part of primary data source",
+    "category": "Work Related Injuries"
+  },
+  "injuryDays": {
+    "label": "Days lost due to injury (temporary incapacity)",
+    "description": "Total days lost due to work-related injury.",
+    "note":  "Days lost due to injury (temporary incapacity)” excludes the day of the accident, temporary medical absences,“sick days” allotted in advance by the employer, permanent-incapacity injuries and fatalities",
+    "category": "Work Related Injuries"
+  },
+  "netChangeFTEMandA": {
+    "label": "Total number of Full Time Equivalents (FTE) at end of current year",
+    "description": "Net change in FTEs due to mergers, acquisitions and divestitures.",
+    "category": "Net New Hires"
+  },
+  "organicNetNewHires": {
+    "label": "Total number of Full Time Equivalents (FTE) at end of previous year",
+    "description": "New hires (the number of FTE joining the company) less turnover (the number of FTE leaving the company) during 'Year', with any changes due to M&A excluded. Excludes any FTE growth or decline due to a business acquisition or business unit divestiture.",
+    "validators": [
+      "Organic Net New Hires = Current Year FTEs - Previous Year FTEs - (net change in FTEs due to M&A)",
+      "Previous Year FTEs + Organic Net New Hires ≥ 0",
+      "Organic Net New Hires = Total Net New Hires - (net change in FTEs due to M&A)"
+    ],
+    "category": "Net New Hires"
+  },
+  "totalNetNewHires": {
+    "label": "Net change in FTEs due to M&A in the last year",
+    "description": "New hires (the number of FTE joining the company) less turnover (the number of FTE leaving the company) during 'Year'. Includes any FTE growth or decline due to a business acquisition or business unit divestiture.",
+    "validators": [
+      "Total Net New Hires = Current Year FTEs - Previous Year FTEs",
+      "Current Year FTEs - Total Net New Hires ≥ 0"
+    ],
+    "category": "Net New Hires"
+  },
+  "annualTurnoverFTE": {
+    "label": "Organic Net New Hires",
+    "description": "Turnover (the number of FTEs leaving the business excluding those from M&A) over the course of 'Year': \n\n 1. Turnover should be greater than 0. \n 2. Ensure that Organic net new hires ≥ (Turnover * -1)",
+    "note": "Current Year FTEs - Previous Year FTEs - (net change in FTEs due to M&A)",
+    "category": "Net New Hires"
+  },
+  "annualPercentTurnoverFTE": {
+    "label": "Annual Turnover (#) for FTEs",
+    "description": "Turnover (the number of FTEs leaving the business excluding those from M&A) over the course of 'Year' divided by the total number of FTEs in the previous year, multiplied by 100",
+    "validators": [
+      "Turnover should be greater than 0 and is usually less than 100%.",
+      "Ensure that Organic net new hires/Previous year FTEs > (Turnover * -1)",
+      "3. Ensure that Turnover % = Turnover (#) / Previous Year FTEs"
+    ],
+    "category": "Net New Hires"
+  },
+  "employeeSurvey": {
+    "label": "Do you conduct an employee survey regularly?",
+    "description": "",
+    "category": "Employee Engagement",
+    "fields": [
+      "Yes",
+      "No"
+    ],
+    "fieldType": "RadioButton"
+  },
+  "employeeSurveyResponseRate": {
+    "label": "% employees responding to survey",
+    "description": "Total number of employees responding to survey divided by total number of employees surveyed.",
+    "category": "Employee Engagement"
+  },
+  "isEmployeeSatisfactionCollected": {
+    "label": "Do you collect an employee satisfaction score",
+    "description": "Employee satisfaction scores can include eNPS (Employee Net Promoter Score) or ESI (Employee Satisfaction Index) among other calculation methodologies and formulas.",
+    "category": "Employee Engagement",
+    "fields": [
+      "Yes",
+      "No"
+    ],
+    "enum": [
+      "Y",
+      "N"
+    ],
+    "fieldType": "RadioButton"
+  },
+  "employeeSatisfactionScoreMethod": {
+    "label": "Employee satisfaction score method",
+    "description": "Indicate name of employee satisfaction score type/methodology used, such as eNPS (Employee Net Promoter Score), ESI (Employee Satisfaction Index), etc.",
+    "category": "Employee Engagement"
+  },
+  "employeeSatisfactionScore": {
+    "label": "Employee satisfaction score",
+    "description": "Input employee satisfaction score collected. For example: eNPS score should be a %, ESI scores should be a number on the scale of 0 to 100. Others may differ based on score methodology. Please see the appendix in the metrics guidance document for more",
+    "category": "Employee Engagement"
+  }
+}

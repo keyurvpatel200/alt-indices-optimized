@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.landing-fuild-wrapper{
+    font-family: poppins, sans-serif;
+}
+
+.why-you-need-wrapper{
+  margin-block: 120px;
+}
+
+.why-slogan{
+  color: #5172E7;
+  text-transform: uppercase;
+  border: 1px solid #5172E7;
+  border-radius: 20px;
+  padding:7px 15px 5px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight:500;
+}
+
+.icon-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 47px;
+    height: 47px;
+    background: #FFFFFF;
+    box-shadow: 0px 9.4px 18.8px -2.35px rgba(27, 33, 44, 0.12);
+    border-radius: 4.7px;
+}
+
+.flip-card{
+  background-color: #F2F4FA !important;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.df-app{
+   background-color: #F2F4FA !important;  
+   min-height:544px !important;
+}
+.df-bg{
+  background-color: #F2F4FA !important;
+}
+.sample-label{
+  display: flex;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px 10px;
+  z-index: 1;
+}
+.why-you-need-wrapper p{
+  font-size: 14px;
+}
+.read-btn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px !important;
+min-width: 203px;
+min-height: 56px !important;
+background: #5172E7 !important;
+box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.05);
+border-radius: 12px;
+border: none;
+color: white;
+width: max-content;
+font-size: 1rem;
+}
+
+.small-title{  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 10px;
+  gap: 10px;
+  min-width: 166px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7.5px);
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.testimonial-section.bg-1{
+  background: url('../../../assets/images/bg-1.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.testimonial-section.bg-2{
+  background: url('../../../assets/images/bg-2.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.testimonial-section.bg-3{
+  background: url('../../../assets/images/bg-3.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.testimonial-section.bg-4{
+  background: url('../../../assets/images/bg-4.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.testimonial-section.bg-5{
+  background: url('../../../assets/images/bg-5.jpg') no-repeat center center;
+  background-size:cover;
+}
+.each-blog{
+  width: calc(100% - 20px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.blog-image{
+  width:100%;
+}
+.blog-image figure{
+  margin-bottom: 0px;
+}
+.blog-image img{
+width:100%;
+height: 100%;
+object-fit: cover;
+}
+.blog-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 24px;
+}
+read-more .slick-slide img{
+  max-width: 100%;
+}
+.blog-content h5{
+font-size: 24px;
+line-height: 1.5;
+}
+.blog-content p{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.author-image{
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.author-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-name label{
+  font-size: 14px;
+}
+.author-name span{
+  font-size: 12px;
+}
+.blog-footer {
+  min-height: 48px;
+}
+.slick-dots li button:before{
+      font-size: 13px !important;
+}
+
+
+@media(max-width:767px){
+  .why-you-need-wrapper{
+    margin-block:32px;
+  }
+  .testimonial-wrap{
+    height: auto;
+  }
+  .df-app{
+    min-height:446px !important;
+}
+.testimonial-wrap .header-section{
+  margin-bottom: 2rem;
+}
+.blog-image{
+  height: 100%;
+}
+.blog-image img{
+  height: 100%;
+}
+.blog-image figure{
+  height: 100%;
+}
+.blog-content h5{
+  font-size: 1rem;
+}
+.blog-content p{
+  font-size: 14px;
+}
+.get-started{
+  padding-bottom: 1rem;
+  margin-bottom:0px
+}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+  padding-left: 1rem;
+  font-size: 14px;
+}
+}
+
+.df-loading-info{
+  display: none !important;
+}
+
+html,
+body {
+  zoom: 0.9;
+}
+.why-you-need-content h6{
+font-size: 14px;
+}
+.why-you-need-content p{
+  color: #676767B2;
+}
+.why-you-need-content .border-end{
+  border-color: #E6E6E6 !important;
+}
+.df-ui-zoomin, .df-ui-zoomout, .df-ui-print{
+  display: none !important;
+}
