@@ -108,6 +108,7 @@ export default function WhyYouNeed() {
               src="https://www.youtube.com/watch?v=o4u70nPdu84"
               controls={false}
               playing={isPlaying}
+              light={true}
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
               style={{
