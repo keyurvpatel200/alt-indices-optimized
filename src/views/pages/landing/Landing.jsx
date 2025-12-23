@@ -12,14 +12,11 @@ const Blog = lazy(() => import('./Blog'))
 const GetStarted = lazy(() => import('./GetStarted'))
 const Footer = lazy(() => import('./Footer'))
 
-const SectionLoader = () => (
-  <div style={{ minHeight: '200px' }} />
-)
 
 export default function Landing() {
   return (
     <div className="landing-fuild-wrapper">
-      <Suspense fallback={<SectionLoader />}>
+      <Suspense fallback={null}>
         <Header />
         <Banner />
         <WhyYouNeed />
